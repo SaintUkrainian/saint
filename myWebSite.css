@@ -165,24 +165,12 @@ nav{
     padding-top: 10vh;
 }
 
-.list li{
-    display: inline;
-    text-decoration: none;
-    text-align: center;
-    margin-left: 10px;
-    border: gray solid 1px;
-    background-color: gray;
-    background-size: cover;
-}
-
-.list{
-    display: inline;
-    color: white;
-}
 
 .list2{
-    display: inline;
+    display: flexbox;    
     color: white;
+    text-align: center;
+    align-content: center;
 }
 
 .list2 li{
@@ -192,11 +180,15 @@ nav{
     margin-left: 10px;
     border: gray solid 1px;
     background-color: gray;
+    box-shadow: 0 2px 2px black;
+    padding: 0pt 2pt;
 }
 
 .skillpath{
-    display: flex;
+    margin-top: 10px;
+    display: inline-flexbox;
     font-size: 40px;
+    align-content: center;
 }
 
 .contact-info{
@@ -240,6 +232,16 @@ nav{
     color: black;
 }
 
+#inProgress {
+    background-color: red;
+}
+
+#skill {
+    background-color: green;
+}
+
+
+
 @keyframes drp{
     0%{
         opacity: 0;
@@ -251,25 +253,24 @@ nav{
     }
 }
 
-@media screen and (max-width: 1024px){
-    .count{
-        flex-direction: column;
+@media screen and (max-width: 1500px){
+    
+    header{
+        height: 7vh;
     }
 
     .skillpath{
         flex-direction: column;
-    }
-    
-    .list{
-        flex-direction: column;
-        text-align: center;
-        display: flex;
     }
 
     .list2{
         flex-direction: column;
         text-align: center;
         display: flex;
+    }
+
+    .list2 li {
+        margin-top: 4pt;
     }
 
     .skills2{
@@ -287,22 +288,13 @@ nav{
 
 }
 
-@media screen and (max-height: 800px){
+@media screen and (max-width: 800px){
     header{
-        height: 7vh;
-    }
-    .count{
-        flex-direction: column;
+        height: 10vh;
     }
 
     .skillpath{
         flex-direction: column;
-    }
-    
-    .list{
-        flex-direction: column;
-        text-align: center;
-        display: flex;
     }
 
     .list2{
@@ -311,8 +303,12 @@ nav{
         display: flex;
     }
 
+    .list2 li {
+        margin-top: 4pt;
+    }
+
     .skills2{
-        margin-top: 35vh;
+        margin-top: 20vh;
         flex-direction: column;
     }
 
@@ -325,22 +321,13 @@ nav{
     }
 }
 
-@media screen and (max-height: 500px){
+@media screen and (max-width: 500px){
     header{
-        height: 10vh;
-    }
-    .count{
-        flex-direction: column;
+        height: 15vh;
     }
 
     .skillpath{
         flex-direction: column;
-    }
-    
-    .list{
-        flex-direction: column;
-        text-align: center;
-        display: flex;
     }
 
     .list2{
@@ -349,8 +336,12 @@ nav{
         display: flex;
     }
 
+    .list2 li {
+        margin-top: 4pt;
+    }
+
     .skills2{
-        margin-top: 37vh;
+        margin-top: 20vh;
         flex-direction: column;
     }
 
