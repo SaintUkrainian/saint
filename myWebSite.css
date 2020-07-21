@@ -14,7 +14,7 @@ body{
 header{
     display: flex;
     align-items: center;
-    height: 5vh;
+    height: 7vh;
     background-color: grey;
     text-align: start;
 
@@ -33,6 +33,17 @@ main{
     list-style: none;
 }
 
+.text-saint{
+    width: fit-content;
+    border-radius: 5px;
+    padding: 0pt 2pt;
+    padding-left: 5pt;
+    box-shadow: 0 2px 2px black;
+    animation: ukr 4s infinite alternate;
+    background: rgb(66, 94, 221);
+    background-position: 0 0;
+}
+
 nav{
     flex: 1;
 }
@@ -46,6 +57,7 @@ nav{
     justify-content: center;
     padding: 5px;
     border-radius: 5px;
+    box-shadow: 0 2px 2px black;
     
 }
 
@@ -253,6 +265,11 @@ nav{
     }
 }
 
+@keyframes ukr {
+    50% {
+      background: yellow;
+    }
+  }
 @media screen and (max-width: 1500px){
     
     header{
